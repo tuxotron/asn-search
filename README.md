@@ -4,16 +4,17 @@ This tool will dump the ASN information using [Hurricane Electric](https://bgp.h
 
 This tool runs on Docker, and you can either use an image I have already created:
 
-    docker run -it --cap-add=SYS_ADMIN asn-search <COMPANY NAME>
+    docker run -it --cap-add=SYS_ADMIN tuxotron/asn-search <COMPANY NAME>
 
 Or you can build it yourself:
 
     docker build -t asn-search .
+    docker run -it --cap-add=SYS_ADMIN asn-search <COMPANY NAME>
 
 Ex:
 
     docker run -it --cap-add=SYS_ADMIN asn-search aol
-    
+
     aol
     AS15445
     AS13084
